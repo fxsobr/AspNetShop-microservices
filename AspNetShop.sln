@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetShop.Web", "AspNetShop.Web\AspNetShop.Web.csproj", "{73C9C61F-9213-4373-B7F4-9830A68AAFE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetShop.ProductAPI", "AspNetShop.ProductAPI\AspNetShop.ProductAPI.csproj", "{20191117-DA92-4195-8154-202DE2E0869D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{73C9C61F-9213-4373-B7F4-9830A68AAFE3} = {41630798-15E2-4FC0-99FF-D02C57FB77C4}
+		{20191117-DA92-4195-8154-202DE2E0869D} = {6E99D065-4829-4CAD-AEB4-3E1803A3C52A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{73C9C61F-9213-4373-B7F4-9830A68AAFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{73C9C61F-9213-4373-B7F4-9830A68AAFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73C9C61F-9213-4373-B7F4-9830A68AAFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73C9C61F-9213-4373-B7F4-9830A68AAFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20191117-DA92-4195-8154-202DE2E0869D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20191117-DA92-4195-8154-202DE2E0869D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20191117-DA92-4195-8154-202DE2E0869D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20191117-DA92-4195-8154-202DE2E0869D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
