@@ -29,6 +29,30 @@ namespace AspNetShop.ProductAPI.Controllers
             if (product == null) return NotFound();
             return Ok(product);
         }
+        
+        [HttpPost]
+        public async Task<ActionResult<ProductVO>> Create(ProductVO valueObject)
+        {
+            if (valueObject == null) return BadRequest();
+            var product = await _repository.Create(valueObject);
+            return Ok(product);
+        }
+        
+        [HttpPut]
+        public async Task<ActionResult<ProductVO>> Update(ProductVO valueObject)
+        {
+            if (valueObject == null) return BadRequest();
+            var product = await _repository.Update(valueObject);
+            return Ok(product);
+        }
+        
+        [HttpDelete("{id:long}")]
+        public async Task<ActionResult> Delete(long id)
+        {
+            var status = await _repository.Delete(id);
+            if (!status) return BadRequest();
+            return Ok(status);
+        }
 
 
     }
