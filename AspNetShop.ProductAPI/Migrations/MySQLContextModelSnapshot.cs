@@ -56,6 +56,62 @@ namespace AspNetShop.ProductAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2L,
+                            CategoryName = "Estratégia",
+                            Description = "Crie a sua escola dos sonhos neste jogo de simulação de gerenciamento! A escola está te deixando para baixo?",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/1921760/header.jpg?t=1655089737",
+                            Name = "Pocket Academy",
+                            Price = 16.73m
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            CategoryName = "Casual",
+                            Description = "Um jogo de trabalho em equipe e trairagem online ou em rede local para 4 a 15 jogadores... no espaço!",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg?t=1646296970",
+                            Name = "Among Us",
+                            Price = 18.71m
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            CategoryName = "Ação",
+                            Description = "AS MELHORES LUTAS SÃO AS PESSOAIS Cerre os punhos e se prepare para o combate definitivo.",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/header.jpg?t=1638999755",
+                            Name = "Tekken 7",
+                            Price = 16.73m
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            CategoryName = "FPS",
+                            Description = "O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos. O CS:GO contém novos mapas, personagens e armas, além de contar com versões atualizadas de conteúdos do CS clássico (como de_dust2).",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1641233427",
+                            Name = "Counter-Strike: Global Offensive",
+                            Price = 75.99m
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            CategoryName = "Ação",
+                            Description = "O NOVO RPG DE AÇÃO E FANTASIA. Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg?t=1654259241",
+                            Name = "ELDEN RING",
+                            Price = 249.9m
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            CategoryName = "MMORPG",
+                            Description = "Boas-vindas a High Isle, uma parte de Tamriel nunca antes vista em The Elder Scrolls. Explore o idílico enclave oceânico dos bretões e sede da cultura cavalheiresca ao confrontar as forças destruidoras do Senhor Ascendente.",
+                            ImageUrl = "https://cdn.cloudflare.steamstatic.com/steam/apps/1754000/header_brazilian.jpg?t=1654630255",
+                            Name = "The Elder Scrolls Online: High Isle",
+                            Price = 149m
+                        });
                 });
 #pragma warning restore 612, 618
         }
