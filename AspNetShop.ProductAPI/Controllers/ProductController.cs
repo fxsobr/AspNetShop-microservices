@@ -31,7 +31,7 @@ namespace AspNetShop.ProductAPI.Controllers
         }
         
         [HttpPost]
-        public async Task<ActionResult<ProductVO>> Create(ProductVO valueObject)
+        public async Task<ActionResult<ProductVO>> Create([FromBody] ProductVO valueObject)
         {
             if (valueObject == null) return BadRequest();
             var product = await _repository.Create(valueObject);
@@ -39,7 +39,7 @@ namespace AspNetShop.ProductAPI.Controllers
         }
         
         [HttpPut]
-        public async Task<ActionResult<ProductVO>> Update(ProductVO valueObject)
+        public async Task<ActionResult<ProductVO>> Update([FromBody] ProductVO valueObject)
         {
             if (valueObject == null) return BadRequest();
             var product = await _repository.Update(valueObject);
