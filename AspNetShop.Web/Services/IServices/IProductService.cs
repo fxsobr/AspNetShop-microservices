@@ -1,4 +1,6 @@
-namespace AspNetShop.Web.Models.Services.IServices;
+using AspNetShop.Web.Models;
+
+namespace AspNetShop.Web.Services.IServices;
 
 public interface IProductService
 {
