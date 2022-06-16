@@ -14,7 +14,7 @@ public class Product: Controller
 
     public async Task<IActionResult> ProductIndex()
     {
-        var products = _productService.FindAllProducts();
+        var products = await _productService.FindAllProducts();
         return View(products);
     }
     
